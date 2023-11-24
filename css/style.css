@@ -1,0 +1,166 @@
+.attribution {
+	font-size: 10px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+body {
+	font-family: Montserrat;
+	font-size: 14px;
+	background-color: hsl(30, 38%, 92%);
+}
+
+#wrapper {
+	width: 600px;
+	height: 450px;
+	margin: 175px auto 0;
+	border-radius: 10px;
+	background: #fff;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	overflow: hidden;
+}
+
+picture img {
+	width: 100%;
+}
+
+.product-info {
+	margin: 32px 30px;
+}
+
+.product-info h1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 15px;
+    letter-spacing: 5px;
+	color: #6C7289;
+	margin: 0 0 20px 0;
+}
+
+.product-info h2 {
+    font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+    color: #1C232B;
+	margin: 0 0 24px;
+	color: #1C232B;
+}
+
+p.description {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 23px;
+	margin: 0 0 29px;
+    color: #6C7289;
+}
+
+p.prices {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	margin: 0 0 30px;
+}
+
+span.discount-price {
+    font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+    color: #3D8168;
+}
+
+span.original-price {
+    font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration-line: line-through;
+    color: #6C7289;
+}
+
+.add {
+
+color: #FFFFFF;
+	background: #3D8168 url("../images/icon-cart.svg") no-repeat 63px 16px;
+	border-radius: 8px;
+	width: 236px;
+	height: 48px;
+	margin: 0;
+}
+
+.add a {
+	position: relative;
+	left: 89px;
+	top: 15px;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	display: block;
+}
+
+@media screen and (max-width: 375px) {
+
+	#wrapper {
+		width: 343px;
+		height: 611px;
+		background: #fff;
+		border-radius: 10px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	img {
+		display: block;
+	}
+
+	.product-info {
+		padding: 24px 24px;
+		margin: 0;
+	}
+
+	.product-info h1 {
+		margin-bottom: 12px;
+	}
+
+	.product-info h2 {
+		margin-bottom: 16px;
+		line-height: 30px;
+	}
+
+	p.description {
+		margin-bottom: 24px;
+	}
+
+	p.prices {
+		margin-bottom: 20px;
+	}
+
+	.add {
+		width: 295px;
+		background-position: 92px 16px;
+	}
+
+	.add a {
+		position: relative;
+		left: 118px;
+		top: 15px;
+	}
+}
